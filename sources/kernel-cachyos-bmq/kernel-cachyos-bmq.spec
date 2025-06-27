@@ -68,7 +68,7 @@
 
 %define _module_args KERNEL_UNAME=%{_kver} IGNORE_PREEMPT_RT_PRESENCE=1 SYSSRC=%{_builddir}/linux-%{_tarkver} SYSOUT=%{_builddir}/linux-%{_tarkver}
 
-Name:           kernel-cachyos%{?_lto_args:-lto}
+Name:           kernel-cachyos-bmq%{?_lto_args:-lto}
 Summary:        Linux BMQ %{?_lto_args:+ LTO }Cachy Sauce Kernel by CachyOS with other patches and improvements.
 Version:        %{_basekver}.%{_stablekver}
 Release:        cachyos2%{?_lto_args:.lto}%{?dist}
@@ -318,7 +318,7 @@ cd ..
     %endif
 
 %package core
-Summary:        Linux BORE Cachy Sauce Kernel by CachyOS with other patches and improvements
+Summary:        Linux BMQ Cachy Sauce Kernel by CachyOS with other patches and improvements
 AutoReq:        no
 Conflicts:      xfsprogs < 4.3.0-1
 Conflicts:      xorg-x11-drv-vmmouse < 13.0.99
