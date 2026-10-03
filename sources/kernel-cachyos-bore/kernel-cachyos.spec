@@ -105,12 +105,15 @@ BuildRequires:  perl-devel
 BuildRequires:  perl-generators
 BuildRequires:  perl-interpreter
 %endif
-BuildRequires:  python3-devel
-BuildRequires:  python3-pyyaml
+
 %if 0%{?suse_version} == 0
 BuildRequires:  python-srpm-macros
+BuildRequires:  python3-devel
+BuildRequires:  python3-pyyaml
 %else
 BuildRequires:  python-rpm-macros
+BuildRequires:  python3-devel
+BuildRequires:  python3-PyYAML
 %endif
 BuildRequires:  clang
 BuildRequires:  lld
