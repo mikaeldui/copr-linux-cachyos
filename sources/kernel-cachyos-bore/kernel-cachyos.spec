@@ -101,10 +101,10 @@ BuildRequires:  openssl
 BuildRequires:  openssl-devel
 %if 0%{?fedora} || 0%{?rhel}
 BuildRequires:  perl-Carp
-%endif
 BuildRequires:  perl-devel
 BuildRequires:  perl-generators
 BuildRequires:  perl-interpreter
+%endif
 BuildRequires:  python3-devel
 BuildRequires:  python3-pyyaml
 BuildRequires:  python-srpm-macros
