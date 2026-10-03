@@ -107,7 +107,11 @@ BuildRequires:  perl-interpreter
 %endif
 BuildRequires:  python3-devel
 BuildRequires:  python3-pyyaml
+%if 0%{?suse_version} == 0
 BuildRequires:  python-srpm-macros
+%else
+BuildRequires:  python-rpm-macros
+%endif
 BuildRequires:  clang
 BuildRequires:  lld
 BuildRequires:  llvm
