@@ -99,7 +99,9 @@ BuildRequires:  kmod
 BuildRequires:  make
 BuildRequires:  openssl
 BuildRequires:  openssl-devel
+%if 0%{?fedora} || 0%{?rhel}
 BuildRequires:  perl-Carp
+%endif
 BuildRequires:  perl-devel
 BuildRequires:  perl-generators
 BuildRequires:  perl-interpreter
