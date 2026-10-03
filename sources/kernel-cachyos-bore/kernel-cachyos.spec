@@ -85,7 +85,13 @@ Obsoletes:      kernel-cachyos%{?_lto_args:-lto} <= 6.12.9-cb1.0.lto%{?_lto_args
 BuildRequires:  bc
 BuildRequires:  bison
 BuildRequires:  dwarves
+%if 0%{?suse_version} == 0
 BuildRequires:  elfutils-devel
+%else
+BuildRequires:  libelf-devel
+BuildRequires:  libdw-devel
+BuildRequires:  elfutils
+%endif
 BuildRequires:  flex
 BuildRequires:  gcc
 BuildRequires:  gettext-devel
